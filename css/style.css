@@ -70,6 +70,8 @@ nav li {
 #rg{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
+  background-color: #1496BB;
+  border-radius: 1mm;
   color: white;
   margin-top: -1cm;
 }
