@@ -45,11 +45,11 @@ canvas {
   margin-top: 5px;
 }
 
-li .active,
+/*li .active,
 .active {
   background-color: white;
   color: black;
-}
+}*/
 
 nav li {
   border-radius: 10%;
@@ -70,6 +70,7 @@ nav li {
 #rg{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
+  color: white;
   margin-top: -1cm;
 }
 
