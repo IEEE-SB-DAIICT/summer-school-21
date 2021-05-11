@@ -13,13 +13,6 @@ canvas {
   z-index: -1;
 }
 
-/* Navbar */
-
-@media (max-width: 576px) {
-  .navbar {
-    background-color: black !important;
-  }
-}
 
 .navbar-toggler {
   background: white;
@@ -149,6 +142,162 @@ nav li {
 #speakers .card {
   margin: 15px;
 }
+
+h2 {
+  color: #0a4870;
+  font-weight: 500;
+}
+
+.speaker-cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 50px;
+  padding: 0;
+}
+
+
+ul .booking-card {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex: 0 0 300px;
+  flex-direction: column;
+  margin: 20px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 100px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: #0a4870;
+  transition: 0.3s;
+}
+
+ul .booking-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 72, 112, 0);
+  transition: 0.3s;
+}
+ul .booking-card .book-container {
+  height: 200px;
+}
+ul .booking-card:hover .book-container {
+  height: 140px;
+}
+ul .booking-card .book-container .content {
+  position: relative;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-200px);
+  transition: 0.3s;
+}
+ul .booking-card .book-container .content .btn {
+  border: 3px solid white;
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+ul .booking-card .book-container .content .btn:hover {
+  background: white;
+  border: 0px solid white;
+  color: #0a4870;
+}
+ul .booking-card .informations-container {
+  flex: 1 0 auto;
+  padding: 20px;
+  background: #f0f0f0;
+  transform: translateY(206px);
+  transition: 0.3s;
+}
+ul .booking-card .informations-container .title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+ul .booking-card .informations-container .sub-title {
+  margin-bottom: -90px;
+}
+ul .booking-card:hover .informations-container .sub-title {
+  margin-bottom: -30px;
+}
+ul .booking-card .informations-container .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 50px;
+  margin: auto;
+  margin-top: 10px;
+  background: #0a4870;
+}
+ul .booking-card .informations-container .more-information {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+ul .booking-card .informations-container .more-information .disclaimer {
+  margin-top: 35px;
+  font-size: 0.8em;
+  color: #7d7d7d;
+  margin-bottom: -10px;
+}
+ul .booking-card:hover::before {
+  background: rgba(10, 72, 112, 0.6);
+}
+ul .booking-card:hover .book-container .content {
+  opacity: 1;
+  transform: translateY(0px);
+}
+ul .booking-card:hover .informations-container {
+  transform: translateY(0px);
+}
+ul .booking-card:hover .informations-container .more-information {
+  opacity: 1;
+}
+
+.credits {
+  display: table;
+  background: #0a4870;
+  color: white;
+  line-height: 25px;
+  margin: 10px auto;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.credits a {
+  color: #e3ebf1;
+}
+
+h1 {
+  margin: 10px 20px;
+}
 /* Speakers end */
 
 /* schedule start */
@@ -224,3 +373,50 @@ nav li {
   border-radius: 0.2in;
 }
 /* end of contact */
+
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: black !important;
+    margin-right: 155px;
+  }
+  .ml-1{
+    text-align: center;
+  }
+  #home{
+    text-align: center;
+    margin-left: 5px;
+  }
+  #about{
+    width: 100%;
+  }
+  #gallery{
+    margin-left: 25.5%;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 900px;
+    width: 500px;
+  }
+  #rg{
+    margin-top: -1cm;
+    margin-bottom: 1cm;
+    margin-left: -10px;
+  }
+  .registration-card{
+    width:90%;
+ }
+ .rg-type
+ {
+   margin-left: -110px;
+   font-size: 99.9%;
+ }
+ .col-md-6{
+   margin-top: 40px;
+ }
+}

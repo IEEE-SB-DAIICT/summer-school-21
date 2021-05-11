@@ -76,20 +76,22 @@
     <canvas id="c"></canvas>
     <p class="home_title">Summer School '21</p>
     <h1>
+      <div class="small_span">5 days workshop on</div>
       Data Science
       <div class="small_span">and</div>
       Machine Learning
     </h1> 
     <br />
     <h3>4<sup>th</sup> - 6<sup>th</sup> & 12<sup>th</sup> - 13<sup>th</sup> June, 2021</h3>
-    <div class="small_span">(5 days workshop)</div>
+    <!-- <div class="small_span">(5 days workshop)</div> -->
     <br>
     <button id="rg" onclick="location.href='#register_top'">Register Now</button>
+    <br>
   </div>
 
   <br id="about_top"><br><br>
   <div class="container" id="about">
-    <div class="row justify-content-center text-center">
+    <div class="row justify-content-center">
       <h2 class="section-title">About IEEE</h2>
       <p>
         IEEE Student Branch DAIICT aims to provide an interactive and informative  
@@ -100,16 +102,27 @@
       <p>
         This time we bring to you a 5 day-long, Summer School 2021. This summer school 
         aims at providing a hands-on experience in one of the emerging technical domains 
-        followed by numerous competitions and exciting prizes to grab.
+        followed by a competition and exciting prizes to grab.
       </p>
       <p>
-        The domain for Summer School 2021 is 
-        <strong> Data Science and Machine Learning.</strong>
+      The domain for Summer School 2021 is 
+      <strong> 
+        Data Science and Machine Learning.
+      </strong> <br>
       </p>
       <p>
-        The event will take place from <strong>4th, 5th, 6th | 12th and 13th June 2021.</strong>
+        The event will take place on:
+      </p>
+        <p>
+      <strong>
+      4th, 5th and 6th June 2021 </strong>- Data Science and Machine Learning Hands-on 
+      </p>
+      <p>
+        <strong>
+        12th and 13th June 2021</strong>- Advanced Machine Learning Algorithms and Industrial Project
+        </p>
         <br>
-      </p>
+      
     </div>
   </div>
   <br id="about_top">
@@ -117,7 +130,7 @@
     <div class="row justify-content-center">
         <h2 class="section-title">About Data Science & Machine Learning</h2>
         <ul>
-          <li>Data Science is a broad and interdisciplinary field using extensive amounts of data to gain knowledge and insights. Although data science includes machine learning, it is a vast field with many different tools.</li>
+          <li>Data Science is a broad and interdisciplinary field using extensive amount of data to gain knowledge and insights. Although data science includes machine learning, it is a vast field with many different tools.</li>
           <li>Machine learning is a group of techniques used to allow computers to resourcefully learn from available data. Machine learning algorithms operate without explicit rules.</li>
           <li>Both Data science and machine learning are trendy buzzwords these days. This summer school is going to bring something that will help students gain an overview of Machine Learning dealing with Introduction, 
             carrying on with Statistics, Data analysis and Supervised learning.
@@ -202,23 +215,24 @@
     </div>
   </div>
 
+
   <br id="speakers_top"><br><br>
   <div class="container" id="speakers">
     <div class="text-center">
       <h1 class="section-title">Speakers</h1>
     </div>
     <div class="d-flex flex-wrap justify-content-around">
-      <div class=" card" style="width: 18rem;"> <!--Width will be 18 rpm when the details will be updated.-->
-        <!-- <img src="./img/musk.jpg" class="card-img-top" alt="..." /> -->
+      <!-- <div class=" card" style="width: 18rem;"> Width will be 18 rpm when the details will be updated.-->
+        <!-- <img src="./img/musk.jpg" class="card-img-top" alt="..." /> 
         <div class="card-body">
           <h5 class="card-title">To be announced.</h5>
-          <!-- <p class="card-text">
+          <p class="card-text">
             Adarsha is an Analytics and Data Science Expert and he is leading group of data scientists who enable marketing 
 strategies through ML and AI.
-          </p> -->
+          </p> 
         </div>
       </div>
-      <!-- <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
         <img src="./img/musk.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Mr Musk</h5>
@@ -227,7 +241,37 @@ strategies through ML and AI.
             bulk of the card's content.
           </p>
         </div>
-      </div> -->
+      </div>-->
+      <ul class="speaker-cards">
+        <li class="booking-card" style="background-image:url(./img/Adarsh.jpg);" onclick="changeMG()">
+          <div class="book-container">
+            <div class="content">
+              <a class="btn" href="https://www.linkedin.com/in/adarsha-shivananda-8870a358">Linkedin Profile</a>
+            </div>
+          </div>
+          <div class="informations-container">
+            <h2 class="title">Mr. Adarsha Shivananda</h2>
+            <p class="sub-title">Data Scientist | Author | Speaker | AI educator | Co-founder at Profond AI</p>
+            <div class="more-information">
+              <p class="disclaimer" id="why"><strong>Mr. Adarsha</strong> is an Analytics and Data Science Expert and he is leading a group of data scientists who enable marketing strategies through ML and AI. He is also actively involved in <strong>R&D on NLP</strong> for creating next-gen AI products. His rich experience and expertise involve business understanding, Statistics, Machine Learning, and Deep Learning. Previously, he was part of <strong>Tredence Analytics and IQVIA</strong>, where he was involved in delivering high-quality Analytics and Data science products in the e-commerce domain. Recently, he <strong>published a book on NLP with Apress</strong> and authoring another with <strong>Packt</strong>.</p>
+              </div>
+          </div>
+        </li>
+        <li class="booking-card" style="background-image: url(./img/Akshay.jpg);">
+          <div class="book-container">
+            <div class="content">
+              <a class="btn" href="https://www.linkedin.com/in/akshay-kulkarni-1a562679">Linkedin Profile</a>
+            </div>
+          </div>
+          <div class="informations-container">
+            <h2 class="title">Mr. Akshay Kulkarni</h2>
+            <p class="sub-title">Principal Data Scientist | Author | Speaker | Thought Leader | Co-founder at Profond AI</p>
+            <div class="more-information">
+              <p class="disclaimer"><strong>Mr. Akshay</strong> is a renowned Artificial Intelligence and Machine learning evangelist and a thought leader. He is awarded <strong>Top 40 Data scientists under 40</strong> in India by Analytics India Magazine. He has rich experience in building and scaling AI and Machine Learning businesses and creating significant client impact. Previously, he was part of <strong>Gartner and Accenture</strong>, where he scaled the analytics and data science business. He has <strong>published international books</strong> on Data Science/ Artificial Intelligence with <strong>Packt and Apress</strong> and currently authoring a book on Next-Gen AI with Oreilly. </p>
+              </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -534,7 +578,7 @@ strategies through ML and AI.
       <div class="d-flex flex-wrap justify-content-around">
         <div class="registration-card text-center" id="tmp">
           <div class="registeration-title">
-            <h3>IEEE/DA-IICT Member</h3>
+            <h3 class="rg-type">IEEE/DA-IICT Member</h3>
           </div>
           <hr />
           <h4>&#8377; 200</h4>
@@ -546,7 +590,7 @@ strategies through ML and AI.
         </div>
         <div class="registration-card text-center">
           <div class="registeration-title">
-            <h3>General Participants</h3>
+            <h3 class="rg-type">General Participants</h3>
           </div>
           <hr />
           <h4>&#8377; 300</h4>
@@ -625,7 +669,7 @@ strategies through ML and AI.
         <h4>DA-IICT</h4>
         <p></p>
         <a href="http://www.daiict.ac.in" target="_blank">
-          <img src="./img/dalogo.png" class="img-responsive1" width="50%" height="50%" /></a>
+          <img src="./img/dalogo.png" class="img-responsive1" width="50%" height="56%" /></a>
       </div>
 
       <div class="col-md-4 footer-right">
@@ -643,6 +687,7 @@ strategies through ML and AI.
       <div class="clearfix"></div>
     </div>
   </div>
+
 
   <div class="copyright wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
     <div class="container">
