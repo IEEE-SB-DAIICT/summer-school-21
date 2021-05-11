@@ -134,10 +134,6 @@ nav li {
   padding-bottom: 30px;
 }
 
-#speakers .section-title
-{
-  color:Turquoise;
-}
 
 #speakers .card {
   margin: 15px;
@@ -336,9 +332,6 @@ h1 {
   margin-left: 2.5%;
 }
 
-#register .section-title{
-  color: Turquoise;
-}
 
 .registration-card {
   border: 1px solid black;
@@ -380,20 +373,22 @@ h1 {
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: black !important;
-    margin-right: 155px;
+    width:100vw;
   }
   .ml-1{
     text-align: center;
   }
   #home{
     text-align: center;
+    height: 100%;
     margin-left: 5px;
   }
   #about{
     width: 100%;
   }
   #gallery{
-    margin-left: 25.5%;
+    margin-left: 13vw;
+    object-position: center;
   }
   canvas {
     position: absolute;
@@ -401,20 +396,19 @@ h1 {
     left: 0;
     z-index: -1;
     height: 900px;
-    width: 500px;
+    width: 100vw;
   }
   #rg{
-    margin-top: -1cm;
-    margin-bottom: 1cm;
-    margin-left: -10px;
+    object-position: center;
   }
   .registration-card{
     width:90%;
  }
  .rg-type
  {
-   margin-left: -110px;
-   font-size: 99.9%;
+    width: 60vw;
+    text-align: center;
+    font-size: medium;
  }
  .col-md-6{
    margin-top: 40px;
