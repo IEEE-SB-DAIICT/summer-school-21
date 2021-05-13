@@ -448,6 +448,9 @@ h1 {
     text-align: center;
     font-size: medium;
  }
+ #ieee_GS{
+   margin: 0px 3.8vw;
+ }
  .col-md-6{
    margin-top: 40px;
  }
