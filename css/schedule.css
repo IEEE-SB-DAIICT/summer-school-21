@@ -36,10 +36,6 @@
   transition: all .3 ease-in-out
 }
 
-.list-timeline .list-timeline-item[data-toggle=collapse] {
-  cursor: pointer
-}
-
 .list-timeline .list-timeline-item.active:before,
 .list-timeline .list-timeline-item.show:before {
   background: #ccc
