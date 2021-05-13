@@ -1,6 +1,6 @@
 // background generator for first section
 var w = c.width = window.innerWidth,
-		h = c.height = window.innerHeight,
+		h = c.height = $('#background').outerHeight()+ 2.5*$(".small_span").outerHeight();
 		ctx = c.getContext( '2d' ),
 		
 		opts = {
@@ -344,10 +344,10 @@ function anim(){
 	ctx.stroke();*/
 }
 
-window.addEventListener( 'resize', function(){
+/*window.addEventListener( 'resize', function(){
 	
 	opts.vanishPoint.x = ( w = c.width = window.innerWidth ) / 2;
 	opts.vanishPoint.y = ( h = c.height = window.innerHeight ) / 2;
 	ctx.fillRect( 0, 0, w, h );
-});
+});*/
 window.addEventListener( 'click', init );

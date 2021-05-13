@@ -13,6 +13,29 @@ canvas {
   z-index: -1;
 }
 
+/* Navbar */
+
+/* For mobile phones: */
+@media only screen and (max-width: 576px) {
+  .navbar {
+    background-color: black !important;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+  }
+  .rg-type
+  {
+    text-align: center;
+    font-size: medium;
+  }
+  #ieee_GS{
+    margin: 0px 3.8vw;
+  }
+}
 
 .navbar-toggler {
   background: white;
@@ -57,7 +80,6 @@ nav li {
   color: white;
   margin-top: 30px;
   font-size: 40px;
-  margin-bottom: -30px;
 }
 
 #rg{
@@ -88,8 +110,8 @@ nav li {
 
 /* About starts */
 #about {
-  margin-top: 50px;
-  padding-top: 20px;
+  margin-top: 20px;
+  padding-top: 30px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 30px;
@@ -119,7 +141,7 @@ nav li {
   border-radius: 0.1in;
   width: 75%;
   margin-left: 12.5%;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -131,7 +153,7 @@ nav li {
   border-style: groove;
   box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
   border-radius: 0.1in;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -139,6 +161,8 @@ nav li {
 #speakers .card {
   margin: 15px;
 }
+
+/* Speakers End */
 
 h2 {
   color: #0a4870;
@@ -149,21 +173,20 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-left: 50px;
+  margin: 10px 15px;
   padding: 0;
 }
 
 
 ul .booking-card {
   position: relative;
-  width: 300px;
+  width: 18rem;
   display: flex;
-  flex: 0 0 300px;
+  flex: 0 0 18rem;
   flex-direction: column;
-  margin: 20px;
   margin-bottom: 30px;
-  margin-left: 50px;
-  margin-right: 100px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -300,7 +323,7 @@ h1 {
 /* schedule start */
 #schedule {
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   background-color :white;
   border-style: groove;
   box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
@@ -349,7 +372,6 @@ h1 {
 
 .registeration-title {
   color: #24b8ff;
-  width: 300px;
 }
 /* Register end */
 
@@ -387,7 +409,6 @@ h1 {
   height: 100px;
   max-width: 100%;
 }
-
 /* Sponcers End */
 
 /* Contact */
@@ -404,54 +425,3 @@ h1 {
   border-radius: 0.2in;
 }
 /* end of contact */
-
-
-
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: black !important;
-    width:100vw;
-  }
-  .ml-1{
-    text-align: center;
-  }
-  #home{
-    text-align: center;
-    height: 100%;
-    margin-left: 5px;
-  }
-  #about{
-    width: 100%;
-  }
-  #gallery{
-    margin-left: 13vw;
-    object-position: center;
-  }
-  canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 900px;
-    width: 100vw;
-  }
-  #rg{
-    object-position: center;
-  }
-  .registration-card{
-    width:90%;
- }
- .rg-type
- {
-    width: 60vw;
-    text-align: center;
-    font-size: medium;
- }
- #ieee_GS{
-   margin: 0px 3.8vw;
- }
- .col-md-6{
-   margin-top: 40px;
- }
-}
