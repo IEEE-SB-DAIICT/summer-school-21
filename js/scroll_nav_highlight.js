@@ -8,7 +8,8 @@ $(document).ready(function () {
         var divH4 = divH3 + $('#speakers').outerHeight();
         var divH5 = divH4 + $('#schedule').outerHeight();
         var divH6 = divH5 + $('#register').outerHeight();
-        var divH7 = divH6 + $('#contact').outerHeight();
+        var divH7 = divH6 + $('#sponsors').outerHeight();
+        var divH8 = divH7 + $('#contact').outerHeight();
         if (top < divH1) {
             $("a").removeClass('active');
             $("#nav-item-1").addClass('active');
@@ -39,10 +40,15 @@ $(document).ready(function () {
             $("#nav-item-6").addClass('active');
             // console.log("inside section 6, register");
         }
-        if (top >= divH7 ) {
+        if (top >= divH7 && top < divH8) {
             $("a").removeClass('active');
             $("#nav-item-7").addClass('active');
-            // console.log("inside section 7, contact");
+            // console.log("inside section 7, sponsors");
+        }
+        if (top >= divH8 ) {
+            $("a").removeClass('active');
+            $("#nav-item-8").addClass('active');
+            // console.log("inside section 8, contact");
         }
     });
 });

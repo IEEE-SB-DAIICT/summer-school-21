@@ -107,6 +107,7 @@ nav li {
 #about .section-title,
 #speakers .section-title,
 #schedule .section-title,
+#sponsors .section-title,
 .contact-title{
   color: Turquoise;
 }
@@ -351,6 +352,43 @@ h1 {
   width: 300px;
 }
 /* Register end */
+
+/* Sponsors */
+#sponsors{
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+ /* font-family: "Amaranth", sans-serif; */
+  background-color :white;
+  border-style: groove;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  border-radius: 0.2in;
+}
+.spon-grid {
+  padding: 0px;
+  list-style: none;
+  display: block;
+  width: 90%;
+  background-color: #fff;
+}
+
+.spon-grid li {
+  display: inline-block;
+  margin: 30px 20px;
+  z-index: 10;
+  color: #000;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.spon-grid li img {
+  height: 100px;
+  max-width: 100%;
+}
+
+/* Sponcers End */
 
 /* Contact */
 
