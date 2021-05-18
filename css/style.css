@@ -20,20 +20,10 @@ canvas {
   .navbar {
     background-color: black !important;
   }
-  canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100vw;
-  }
   .rg-type
   {
     text-align: center;
-    font-size: medium;
-  }
-  #ieee_GS{
-    margin: 0px 3.8vw;
+    font-size: 1.5rem;
   }
 }
 
@@ -398,7 +388,7 @@ h1 {
 
 .spon-grid li {
   display: inline-block;
-  margin: 30px 20px;
+  margin: 20px 20px;
   z-index: 10;
   color: #000;
   font-size: 15px;
